@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Import the Manrope font family */
+@font-face {
+  font-family: "Manrope Light";
+  src: url('/fonts/Manrope-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Manrope Regular";
+  src: url('/fonts/Manrope-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Manrope Medium";
+  src: url('/fonts/Manrope-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Manrope Semibold";
+  src: url('/fonts/Manrope-SemiBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Manrope Bold";
+  src: url('/fonts/Manrope-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.manrope-font-light {
+  font-family: 'Manrope Light', sans-serif;
+  font-weight: 300; /* Regular */
+}
+.manrope-font-normal {
+  font-family: 'Manrope Regular', sans-serif;
+  font-weight: 400; /* Regular */
+}
+
+.manrope-font-medium {
+  font-family: 'Manrope Medium', sans-serif;
+  font-weight: 500; /* Medium */
+}
+
+.manrope-font-semibold {
+  font-family: 'Monrope Semibold', sans-serif;
+  font-weight: 600; /* Semibold */
+}
+.manrope-font-bold {
+  font-family: 'Monrope Bold', sans-serif;
+  font-weight: 700; /* Semibold */
+}
+
+
+
+@font-face {
+  font-family: 'RF Dewi Light';
+  src: url('/fonts/RFDewiExpanded-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RF Dewi Regular';
+  src: url('/fonts/RFDewiExpanded-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RF Dewi Semibold';
+  src: url('/fonts/RFDewiExpanded-Semibold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+} 
+@font-face {
+  font-family: 'RF Dewi Bold';
+  src: url('/fonts/RFDewiExpanded-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+} 
+
+.rf-dewi-font-light {
+    font-family: 'RF Dewi Light', sans-serif;
+    font-weight: 300; /* Regular */
+  }
+.rf-dewi-font-normal {
+    font-family: 'RF Dewi Regular', sans-serif;
+    font-weight: 400; /* Regular */
+  }
+  
+  .rf-dewi-font-medium {
+    font-family: 'RF Dewi Regular', sans-serif;
+    font-weight: 500; /* Medium */
+  }
+  
+  .rf-dewi-font-semibold {
+    font-family: 'RF Dewi Semibold', sans-serif;
+    font-weight: 600; /* Semibold */
+  }
+  .rf-dewi-font-bold {
+    font-family: 'RF Dewi Bold', sans-serif;
+    font-weight: 700; /* Semibold */
+  }
+
+
+
+.scrollbarActive::-webkit-scrollbar {
+    @apply ease-in duration-300;
+    width: 2px;
+    height: 0;
+    /* display: none; */
+    opacity: 0;
+  }
+  .scrollbarActive::-webkit-scrollbar-track {
+    @apply bg-2Gray opacity-0;
+  }
+  .scrollbarActive::-webkit-scrollbar-thumb {
+    @apply dark:bg-2Gray opacity-0 ease-in duration-300 transition rounded-md cursor-pointer;
+  }
