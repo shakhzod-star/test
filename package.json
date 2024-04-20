@@ -9,6 +9,7 @@
         "preview": "vite preview"
     },
     "dependencies": {
+        "@amcharts/amcharts5": "^5.9.2",
         "@arcgis/core": "^4.29.10",
         "apexcharts": "^3.48.0",
         "papaparse": "^5.4.1",

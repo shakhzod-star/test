@@ -9,7 +9,7 @@ import MapView from "@arcgis/core/views/MapView";
 import PictureMarkerSymbol from "@arcgis/core/symbols/PictureMarkerSymbol.js";
 import Graphic from "@arcgis/core/Graphic.js";
 import PopupTemplate from "@arcgis/core/PopupTemplate.js";
-import Popup from "@arcgis/core/widgets/Popup.js";
+// import Popup from "@arcgis/core/widgets/Popup.js";
 import FeatureLayer from "@arcgis/core/layers/FeatureLayer.js";
 const mapViewDiv = ref(null);
 
@@ -27,18 +27,6 @@ onMounted(() => {
     map: map,
     zoom: 80, // Starting zoom level
     center: [69.336241, 41.34226], // Longitude, Latitude
-    popup: new Popup({
-      dockEnabled: true,
-      dockOptions: {
-        // Disables the dock button from the popup
-        buttonEnabled: false,
-        // Ignore the default sizes that trigger responsive docking
-        breakpoint: true,
-      },
-      visibleElements: {
-        closeButton: false,
-      },
-    }),
   });
 
   // Path to your SVG icon
